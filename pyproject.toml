@@ -24,9 +24,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/JayRHa/AzureOpsCLI"
-Repository = "https://github.com/JayRHa/AzureOpsCLI"
-Issues = "https://github.com/JayRHa/AzureOpsCLI/issues"
+Homepage = "https://github.com/JayRHa/azure-ops-cli"
+Repository = "https://github.com/JayRHa/azure-ops-cli"
+Issues = "https://github.com/JayRHa/azure-ops-cli/issues"
 
 [project.scripts]
 azure-ops = "azure_ops_cli.cli:main"

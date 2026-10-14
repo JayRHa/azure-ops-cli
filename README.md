@@ -1,20 +1,24 @@
 <!-- jr-brand:start -->
-<div align="center">
+<p align="center">
   <a href="https://jannikreinhard.com/">
-    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — Driving AI with passion" width="100%">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — I help enterprises ship secure AI agents" width="100%">
   </a>
-  <h1>Azure Ops CLI</h1>
-  <p><strong>Agent-friendly Azure operations evidence for resources, deployments, activity logs and health.</strong></p>
-  <p>
-  <a href="https://jannikreinhard.com/"><img src="https://img.shields.io/badge/Website-146CDD?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="Website"></a>
-  <a href="https://github.com/JayRHa"><img src="https://img.shields.io/badge/GitHub-081427?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
-  <a href="https://www.linkedin.com/in/jannik-r/"><img src="https://img.shields.io/badge/LinkedIn-0795FF?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
-  <a href="https://x.com/jannik_reinhard"><img src="https://img.shields.io/badge/X-081427?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X"></a>
-  <a href="https://www.youtube.com/@jannikreinhard"><img src="https://img.shields.io/badge/YouTube-146CDD?style=flat-square&amp;logo=youtube&amp;logoColor=white" alt="YouTube"></a>
-  </p>
-  <p><sub>Driving AI with passion · Microsoft Foundry · Intune · Azure</sub></p>
-</div>
+</p>
+<p align="center">
+  <a href="https://jannikreinhard.com/">Website</a> ·
+  <a href="https://www.linkedin.com/in/jannik-r/">LinkedIn</a> ·
+  <a href="https://x.com/jannik_reinhard">X</a> ·
+  <a href="https://www.youtube.com/@jannikreinhard">YouTube</a>
+</p>
 <!-- jr-brand:end -->
+
+# Azure Ops CLI
+
+**Type:** Tool or application · **Status:** Community project
+
+## Overview
+
+Agent-friendly Azure operations evidence for resources, deployments, activity logs and health.
 
 Agent-friendly Azure operations evidence for resources, App Service, deployments, activity logs and health.
 
@@ -23,29 +27,15 @@ Inspect. Correlate. Recover.
 
 Azure Resource Manager | Python CLI | JSON-first | Agent Ready
 
-
-## Overview
-
 Azure Ops CLI is a lightweight operations toolkit for collecting Azure Resource Manager evidence in a predictable JSON shape. It is built for terminal troubleshooting, CI checks and AI-agent workflows where the agent needs to inspect what is deployed, when it changed and whether Azure reports health issues.
 
 The CLI focuses on read-heavy operational paths: subscription resources, App Service metadata and config, resource group deployments, Activity Log events and Resource Health. Every command supports `--dry-run` so the exact ARM request can be reviewed before execution.
 
-## How It Works
-
-```mermaid
-flowchart LR
-    Operator[Human, script or AI agent] --> CLI[azure-ops CLI]
-    CLI --> Auth[Azure access token or client credentials]
-    CLI --> ARM[Azure Resource Manager]
-    ARM --> Evidence[Resources, deployments, logs, health]
-    Evidence --> JSON[Structured JSON output]
-```
-
 ## Quickstart
 
 ```bash
-git clone https://github.com/JayRHa/AzureOpsCLI.git
-cd AzureOpsCLI
+git clone https://github.com/JayRHa/azure-ops-cli.git
+cd azure-ops-cli
 python -m pip install -e .
 
 export AZURE_ACCESS_TOKEN="<access-token>"
@@ -60,6 +50,17 @@ export AZURE_CLIENT_ID="<app-registration-client-id>"
 export AZURE_CLIENT_SECRET="<client-secret>"
 
 azure-ops appservice show --subscription-id "<subscription-id>" --resource-group "rg-prod" --name "app-prod"
+```
+
+## How It Works
+
+```mermaid
+flowchart LR
+    Operator[Human, script or AI agent] --> CLI[azure-ops CLI]
+    CLI --> Auth[Azure access token or client credentials]
+    CLI --> ARM[Azure Resource Manager]
+    ARM --> Evidence[Resources, deployments, logs, health]
+    Evidence --> JSON[Structured JSON output]
 ```
 
 ## Commands
@@ -96,13 +97,7 @@ All commands write JSON to stdout. Errors are written to stderr with a non-zero 
 MIT License. See [LICENSE](LICENSE).
 
 <!-- jr-brand-footer:start -->
-
 ---
 
-<div align="center">
-  <p><sub>Built and maintained by <a href="https://jannikreinhard.com/">Jannik Reinhard</a> · Microsoft MVP for Security and AI Platform.</sub></p>
-  <p><a href="https://www.buymeacoffee.com/jannikreinf">Support the open-source work</a></p>
-  <p><strong>Stay healthy, Cheers Jannik</strong></p>
-</div>
-
+[Articles and guides](https://jannikreinhard.com/) · [Repository index](https://github.com/JayRHa/.github/blob/main/REPOSITORIES.md)
 <!-- jr-brand-footer:end -->
